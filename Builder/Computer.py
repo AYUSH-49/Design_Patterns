@@ -1,10 +1,11 @@
 class Computer:
-    def __init__(self,builder):
+    def __init__(self, builder):# Computer class that takes a builder object
         self.cpu = builder.cpu
         self.ram = builder.ram
         self.storage = builder.storage
         self.gpu = builder.gpu
         self.power_supply = builder.power_supply
+        
     
     def set_cpu(self, cpu):
         self.cpu = cpu

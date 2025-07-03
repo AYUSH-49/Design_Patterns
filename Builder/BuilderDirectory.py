@@ -6,19 +6,10 @@ class BuilderDirectory:
 
     def get_builder(self):
         if self.TOB == "Gaming":
-            cpu=input("Enter CPU speed (GHz): ")
-            ram=input("Enter RAM size (GB): ")
-            storage=input("Enter Storage size (GB): ")
-            gpu=input("Enter GPU size (GB): ")
-            power_supply=input("Enter Power Supply wattage (W): ")
-
-            return GamingComputerBuilder(cpu, ram, storage, gpu, power_supply)
+            return GamingComputerBuilder()
+        
         elif self.TOB == "Normal":
-            cpu=input("Enter CPU speed (GHz): ")
-            ram=input("Enter RAM size (GB): ")
-            storage=input("Enter Storage size (GB): ")
-            gpu=input("Enter GPU size (GB): ")
-            power_supply=input("Enter Power Supply wattage (W): ")
-            return NormalComputerBuilder(cpu, ram, storage, gpu, power_supply)
+            return NormalComputerBuilder()
+        
         else:
             raise ValueError("Unknown type of computer builder requested.")
