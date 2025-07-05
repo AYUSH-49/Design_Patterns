@@ -1,4 +1,5 @@
-from AbstractFactory.uiFactory.IosButton import IosButton
+from AbstractFactory.uiFactory import IosButton
+from Factory import Factory
 
 class IosButtonFactory(Factory):
     """Factory for creating Android buttons."""

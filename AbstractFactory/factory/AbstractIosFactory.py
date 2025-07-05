@@ -1,15 +1,12 @@
-from abc import ABC,abstractmethod
+from Abstract_Factory import Abstract_Factory
+from IosButtonFactory import IosButtonFactory
+from IosCheckBoxFactory import IosCheckBoxFactory
 
-import IosButtonFactory
-import IosCheckBoxFactory
 
-
-class AbstractAndroidFactory(ABC):
+class AbstractIosFactory(Abstract_Factory):
 
     def create_Button():
-
         return IosButtonFactory()
     
-    def create_checkbox():
-        
+    def create_checkbox():        
         return IosCheckBoxFactory()

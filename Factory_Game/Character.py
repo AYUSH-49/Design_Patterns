@@ -13,8 +13,7 @@ class Character():
             return Knight_Factory().Create_Player()
         elif self.Player_Type == 'archer':
             return Archer_Factory().Create_Player()
-        elif self.Player_Type == 'mage':
-        
+        elif self.Player_Type == 'mage':       
             return Mage_Factory().Create_Player()
         else:
             raise ValueError("Unknown player type: {}".format(self.Player_Type))
